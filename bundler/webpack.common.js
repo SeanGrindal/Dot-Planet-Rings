@@ -23,7 +23,7 @@ module.exports = {
             template: path.resolve(__dirname, '../src/index.html'),
             minify: true,
             favicon: './static/favicons/favicon-16x16.png',
-            ...process.env.NODE_ENV == 'production' ? { base: 'https://dot-planet-rings.netlify.app/' } : {}
+            // ...process.env.NODE_ENV == 'production' ? { base: 'https://dot-planet-rings.netlify.app/' } : {}
         }),
         new MiniCSSExtractPlugin()
     ],
