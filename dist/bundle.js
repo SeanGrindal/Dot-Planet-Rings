@@ -21288,7 +21288,7 @@
           n.camera.position.set(0, 0, 3),
           n.scene.add(n.camera),
           (function (t) {
-            const e = new Ra().load('/dot-planet-rings/planet-texture.jpg'),
+            const e = new Ra().load('/experiments/dot-planet-rings/planet-texture.jpg'),
               n = 3e4,
               i = new fe(new Float32Array(9e4), 3),
               r = new fe(new Float32Array(9e4), 3),
