@@ -21278,10 +21278,10 @@
           this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2)),
           (this.scene = new Sr()),
           (this.threeClock = new _o()),
-          (this.sunLight = new ho('#fffef5', 1)),
+          (this.sunLight = new ho('#fffef5', 1.1)),
           this.sunLight.position.set(Math.cos(0), 1, Math.sin(0)),
           this.scene.add(this.sunLight)
-        const e = new uo('#fffef5', 0.2)
+        const e = new uo('#fffef5', 0.26)
         var n
         this.scene.add(e),
           ((n = this).camera = new an(35, n.sizes.width / n.sizes.height, 0.1, 100)),
@@ -21293,15 +21293,15 @@
               i = new fe(new Float32Array(9e4), 3),
               r = new fe(new Float32Array(9e4), 3),
               s = new fe(new Float32Array(n), 1),
-              a = new he('#808080'),
-              o = new he('#1c1c1c'),
+              a = new he('#2b2b2b'),
+              o = new he('#5e5e5e'),
               l = (t, e) => t + (e - t) * Math.random()
             for (let t = 0; t < n; t++) {
               const e = Math.random() * Math.PI * 2,
                 n = 1 * l(0.6, 0.9)
               i.setXYZ(t, Math.sin(e) * n, l(0, 0.01), Math.cos(e) * n)
               const c = a.clone()
-              c.lerp(o, n / 1), r.setXYZ(t, c.r, c.g, c.b), s.setX(t, l(4, 20))
+              c.lerp(o, n / 1), r.setXYZ(t, c.r, c.g, c.b), s.setX(t, l(8, 22))
             }
             const c = new Ie()
             c.setAttribute('position', i),
