@@ -45,11 +45,12 @@ class Sketch {
 
     this.threeClock = new THREE.Clock()
 
-    this.sunLight = new THREE.DirectionalLight('#fffef5', 1)
+    this.sunLight = new THREE.DirectionalLight('#fffef5', 1.1)
     this.sunLight.position.set(Math.cos(0), 1, Math.sin(0))
     this.scene.add(this.sunLight)
 
-    const ambientLight = new THREE.AmbientLight('#fffef5', 0.2)
+    // const ambientLight = new THREE.AmbientLight('#fffef5', 0.2)
+    const ambientLight = new THREE.AmbientLight('#fffef5', 0.26)
     this.scene.add(ambientLight)
 
     initCamera(this)
